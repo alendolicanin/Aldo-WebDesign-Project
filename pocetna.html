@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Slike/ALDO_logo.png">
+    <title>The Aldo</title>
+</head>
+
+<body>
+    <div class="preloader" id="loading">
+        <div class="container-loader">
+            <div class="loader"><span></span></div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="language lang-icon">
+                <ul>
+                    <li><a href="pocetna.html">SR</a></li>
+                    <li><a href="index.html">EN</a></li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="pocetna.html"><img src="Slike/ALDO_logo_tamni.png" alt="Logo Aldo" id="logo"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li class="active"><a href="pocetna.html">Početna</a></li>
+                        <li><a href="proizvod.html">Proizvodi</a></li>
+                        <li><a href="o_meni.html">O Meni</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="blog_.html">Blog</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li class="lang-li-icon"><a href="pocetna.html">SR</a> | <a href="index.html">EN</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="korpa.html"><img src="Slike/cart.png" alt="Cart" id="cart"></a>
+                <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="_appear_">
+                        <h1>Dobro oblačenje je oblik lepog ponašanja.</h1>
+                    </div>
+                    <p>Uspeh nije ključ sreće. Sreća je ključ uspeha.
+                        <br>Ako volite ono što radite, bićete uspešni.
+                    </p>
+                    <a href="proizvod.html" class="btn btn-shadow">Istražite odmah &#8594</a>
+                </div>
+                <div class="col-2">
+                    <img src="Slike/model2.jpg" alt="Model Aldo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------  featured categories  -------------->
+
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="_scroll_">
+                        <img src="Slike/8.jpg" class="composition-photo">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="_scroll_">
+                        <img src="Slike/9.jpg" class="composition-photo">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="_scroll_">
+                        <img src="Slike/3.jpg" class="composition-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------  featured categories  -------------->
+
+    <div class="small-container">
+        <h2 class="title">Istaknuti proizvodi</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="Slike/4.jpg" class="compo-photo">
+                <h4>Siva jakna</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€48.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/5.jpg" class="compo-photo">
+                <h4>Tamnoplava tanka jakna</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€35.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/6.jpg" class="compo-photo">
+                <h4>Crno-bela tanka jakna</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>€43.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/7.jpg" class="compo-photo">
+                <h4>Tamnosivo odelo</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€115.00</p>
+            </div>
+        </div>
+
+        <h2 class="title">Najnoviji proizvodi</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="Slike/1.jpg" class="compo-photo">
+                <h4>Crno odelo</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€102.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/2.jpg" class="compo-photo">
+                <h4>Svetlo braon kaput</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€87.00</p>
+            </div>
+            <div class="col-4">
+                <a href="proizvod-detalji.html"><img src="Slike/10.jpg" class="compo-photo"></a>
+                <h4>Tamnoplava jakna</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>€65.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/11.jpg" class="compo-photo">
+                <h4>Crna kožna jakna</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€58.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="Slike/17.jpg" class="compo-photo">
+                <h4>Maslinastozelena jakna</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€74.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/14.jpg" class="compo-photo">
+                <h4>Beli džemper</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€38.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/18.jpg" class="compo-photo">
+                <h4>Crno-beli džemper</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>€32.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/16.jpg" class="compo-photo">
+                <h4>Tamnoplavi kaput</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€76.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-------------  offer  -------------->
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="Slike/13.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <div class="_scroll_">
+                        <p>Ekskluzivno dostupno na Aldu</p>
+                        <h2>Crno-bela košulja sa dizajnom listova</h2>
+                        <small>Aldo predstavlja crno-belu košulju na kopčanje za muškarce koja je idealna za bilo koju
+                            garderobu,
+                            sa sivim dizajnom listova i kragnom u obliku kravate.<br>Sa polusakrivenim dugmetom i
+                            detaljima na
+                            dugmadima na rukavima, ova ležerna košulja je odličan način da upotpunite bilo koji ormar,
+                            crno-belim
+                            otiskom lista koji je moderan, jedinstven i svestran.</small>
+                        <br><a href="cart.html" class="btn btn-shadow">Kupi sada &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------  testimonial  -------------->
+
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Kupovina u Aldo u potpunosti je podigla moj set veština, moju kreativnost
+                        i moje razumevanje kako tkanina deluje na telo - njihova lepa,
+                        visokokvalitetna odeća me je izazvala i inspirisala!</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="Slike/user-1.jpg">
+                    <h3>Sean Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Imao sam sreće da kupujem u Aldo i lično i putem interneta i iskreno ne mogu
+                        da ih preporučim dovoljno. Odlična usluga, brza poštarina i neka od najboljih
+                        odeća koje sam ikada imao u svom ormaru.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="Slike/user-2.jpg">
+                    <h3>Mike Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Aldo je apsolutno ZANIMLJIV! Obožavam ovu prodavnicu jer nude lepu,
+                        visokokvalitetnu odeću koju nigde drugde ne mogu naći. Pored toga,
+                        njihovo osoblje je sjajno što čini kupovinu fantastičnom!</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="Slike/user-3.jpg">
+                    <h3>Joe Mabel</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------  brands  -------------->
+
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="_scroll_">
+                        <img src="Slike/logo-h&m.png">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="_scroll_">
+                        <img src="Slike/logo-tomford.png">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="_scroll_">
+                        <img src="Slike/logo-men.png">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="_scroll_">
+                        <img src="Slike/logo-lacoste.png">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="_scroll_">
+                        <img src="Slike/logo-zara.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------  footer  -------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Preuzmite našu aplikaciju</h3>
+                    <p>Preuzmite aplikaciju za Android i iOS mobilni telefon.</p>
+                    <div class="app-logo">
+                        <img src="Slike/play-store.png" id="play_s">
+                        <img src="Slike/app-store.png" id="app_s">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Slike/ALDO_logo_svetli.png" id="logo">
+                    <p>Naša svrha je da održivo učinimo zadovoljstvo i blagodati
+                        mode dostupnim mnogima.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Korisni linkovi</h3>
+                    <ul>
+                        <li>Kuponi</li>
+                        <li>Blog Post</li>
+                        <li>Politika povratka</li>
+                        <li>Učlanjenje</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Pratite nas</h3>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>YouTube <i class="fa fa-youtube-play"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h4 class="copyright">&#169 2021. The Aldo. Sva prava zadržana.</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

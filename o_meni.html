@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Slike/ALDO_logo.png">
+    <title>O Meni - The Aldo</title>
+</head>
+
+<body>
+    <div class="preloader" id="loading">
+        <div class="container-loader">
+            <div class="loader"><span></span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="language lang-icon">
+            <ul>
+                <li><a href="o_meni.html">SR</a></li>
+                <li><a href="about.html">EN</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="pocetna.html"><img src="Slike/ALDO_logo_tamni.png" alt="Logo Aldo" id="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a href="proizvod.html">Proizvodi</a></li>
+                    <li class="active"><a href="o_meni.html">O Meni</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="blog_.html">Blog</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li class="lang-li-icon"><a href="o_meni.html">SR</a> | <a href="about.html">EN</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="korpa.html"><img src="Slike/cart.png" alt="Cart" id="cart"></a>
+            <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-------------  about me  -------------->
+
+    <div class="about-wrapper">
+        <div class="about-left">
+            <div class="about-left-content">
+                <div>
+                    <div class="about-img">
+                        <img src="Slike/AD.jpg" alt="about image">
+                    </div>
+
+                    <h2>Alen<br>Dolićanin</h2>
+                    <h3>Student DUNP</h3>
+                </div>
+
+                <ul class="icons">
+                    <a href="http://www.dunp.np.ac.rs/" target="_blank">
+                        <li><i class="fa fa-university"></i></li>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <li><i class="fa fa-facebook"></i></li>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <li><i class="fa fa-instagram"></i></li>
+                    </a>
+                    <a href="mailto:alen.dolicanin672@gmail.com">
+                        <li><i class="fa fa-envelope"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-right">
+            <div class="_appear_">
+                <h1>Ćao<span>!</span></h1>
+            </div>
+            <h2>Evo ko sam & Šta radim</h2>
+            <div class="about-btns">
+                <a href="mailto:alen.dolicanin672@gmail.com">
+                    <button type="button" class="btns btn-blue">Pošalji e-mail</button>
+                </a>
+            </div>
+
+            <div class="about-para">
+                <p>Ja sam Alen Dolićanin.
+                    Rođen sam 6. jula 2000. godine. Pohađao sam osnovnu školu
+                    „Rifat Burdžović - Tršo“. Išao sam u Gimnaziju u Novom Pazaru.
+                    Godine 2019. upisao smer Softversko inženjerstvo na Državnom univerzitetu
+                    u Novom Pazaru (DUNP).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-------------  footer  -------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Preuzmite našu aplikaciju</h3>
+                    <p>Preuzmite aplikaciju za Android i iOS mobilni telefon.</p>
+                    <div class="app-logo">
+                        <img src="Slike/play-store.png" id="play_s">
+                        <img src="Slike/app-store.png" id="app_s">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Slike/ALDO_logo_svetli.png" id="logo">
+                    <p>Naša svrha je da održivo učinimo zadovoljstvo i blagodati
+                        mode dostupnim mnogima.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Korisni linkovi</h3>
+                    <ul>
+                        <li>Kuponi</li>
+                        <li>Blog Post</li>
+                        <li>Politika povratka</li>
+                        <li>Učlanjenje</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Pratite nas</h3>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>YouTube <i class="fa fa-youtube-play"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h4 class="copyright">&#169 2021. The Aldo. Sva prava zadržana.</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

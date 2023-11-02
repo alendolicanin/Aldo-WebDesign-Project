@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Slike/ALDO_logo.png">
+    <title>Muška Jakna - The Aldo</title>
+</head>
+
+<body>
+    <div class="preloader" id="loading">
+        <div class="container-loader">
+            <div class="loader"><span></span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="language lang-icon">
+            <ul>
+                <li><a href="proizvod-detalji.html">SR</a></li>
+                <li><a href="product-details.html">EN</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="pocetna.html"><img src="Slike/ALDO_logo_tamni.png" alt="Logo Aldo" id="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li class="active"><a href="proizvod.html">Proizvodi</a></li>
+                    <li><a href="o_meni.html">O Meni</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="blog_.html">Blog</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li class="lang-li-icon"><a href="proizvod-detalji.html">SR</a> | <a
+                            href="product-details.html">EN</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="korpa.html"><img src="Slike/cart.png" alt="Cart" id="cart"></a>
+            <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!------ single product details ------>
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="Slike/10.jpg" id="ProductImg" class="composition-photo">
+            </div>
+            <div class="col-2">
+                <p>Početna / Jakna</p>
+                <h1 id="name-clo">Tamnoplava jakna</h1>
+                <h4 id="price-clo">€65.00</h4>
+                <select>
+                    <option>Izaberite veličinu</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="korpa.html" class="btn">Dodaj u kolica</a>
+
+                <h3>Detalji o proizvodu <i class="fa fa-indent"></i></h3><br>
+                <p id="text-clo">Elegantna muška tamnoplava jakna kompanije Aldo - ovo je
+                    savršen procvat za garderobu koja zahteva samo najbolje u svakodnevnoj
+                    muškoj odeći.</p><br>
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="Slike/10.jpg" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Slike/17.jpg" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Slike/11.jpg" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Slike/4.jpg" class="small-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------ title ------>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Povezani proizvodi</h2>
+            <a href="proizvod.html">
+                <p class="view-more">Pogledaj još</p>
+            </a>
+        </div>
+    </div>
+
+    <!------- products ------>
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="Slike/2.jpg" class="compo-photo">
+                <h4>Svetlo braon kaput</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€87.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/14.jpg" class="compo-photo">
+                <h4>Beli džemper</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€38.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/18.jpg" class="compo-photo">
+                <h4>Crno-beli džemper</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>€32.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Slike/16.jpg" class="compo-photo">
+                <h4>Tamnoplavi kaput</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>€76.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-------------  footer  -------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Preuzmite našu aplikaciju</h3>
+                    <p>Preuzmite aplikaciju za Android i iOS mobilni telefon.</p>
+                    <div class="app-logo">
+                        <img src="Slike/play-store.png" id="play_s">
+                        <img src="Slike/app-store.png" id="app_s">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Slike/ALDO_logo_svetli.png" id="logo">
+                    <p>Naša svrha je da održivo učinimo zadovoljstvo i blagodati
+                        mode dostupnim mnogima.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Korisni linkovi</h3>
+                    <ul>
+                        <li>Kuponi</li>
+                        <li>Blog Post</li>
+                        <li>Politika povratka</li>
+                        <li>Učlanjenje</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Pratite nas</h3>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>YouTube <i class="fa fa-youtube-play"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h4 class="copyright">&#169 2021. The Aldo. Sva prava zadržana.</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./app_galerija.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Slike/ALDO_logo.png">
+    <title>My Cart - The Aldo</title>
+</head>
+
+<body>
+    <div class="preloader" id="loading">
+        <div class="container-loader">
+            <div class="loader"><span></span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="language lang-icon">
+            <ul>
+                <li><a href="korpa.html">SR</a></li>
+                <li><a href="cart.html">EN</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Slike/ALDO_logo_tamni.png" alt="Logo Aldo" id="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li class="lang-li-icon"><a href="korpa.html">SR</a> | <a href="cart.html">EN</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="Slike/cart.png" alt="Cart" id="cart"></a>
+            <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-------  cart item details  -------->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr class="cart-hover">
+                <td>
+                    <div class="cart-info">
+                        <img src="Slike/10-1.jpg">
+                        <div>
+                            <p>Dark Navy Slim Jacket</p>
+                            <small>Price: €65.00</small><br>
+                            <a href="" onclick="return false">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>€65.00</td>
+            </tr>
+            <tr class="cart-hover">
+                <td>
+                    <div class="cart-info">
+                        <img src="Slike/17-1.jpg">
+                        <div>
+                            <p>Dark Olive Green Fit Jacket</p>
+                            <small>Price: €74.00</small><br>
+                            <a href="" onclick="return false">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>€74.00</td>
+            </tr>
+            <tr class="cart-hover">
+                <td>
+                    <div class="cart-info">
+                        <img src="Slike/11-1.jpg">
+                        <div>
+                            <p>Black Leather Fit Jacket</p>
+                            <small>Price: €58.00</small><br>
+                            <a href="" onclick="return false">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>€58.00</td>
+            </tr>
+            <tr class="cart-hover">
+                <td>
+                    <div class="cart-info">
+                        <img src="Slike/4-1.jpg">
+                        <div>
+                            <p>Grey Fit Jacket</p>
+                            <small>Price: €48.00</small><br>
+                            <a href="" onclick="return false">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>€48.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>€245.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>€35.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>€280.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="total-price">
+            <a href="purchase.html" class="btn btn-shadow-blue">Proceed to checkout &#8594</a>
+        </div>
+    </div>
+
+    <!-------  footer  -------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="Slike/play-store.png" id="play_s">
+                        <img src="Slike/app-store.png" id="app_s">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Slike/ALDO_logo_svetli.png" id="logo">
+                    <p>Our Purpose is to Sustainably Make the Pleasure
+                        and Benefits of Fashion Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>YouTube <i class="fa fa-youtube-play"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h4 class="copyright">&#169 2021. The Aldo. All rights reserved.</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

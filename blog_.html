@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Slike/ALDO_logo.png">
+    <title>Blog - The Aldo</title>
+</head>
+
+<body>
+    <div class="preloader" id="loading">
+        <div class="container-loader">
+            <div class="loader"><span></span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="language lang-icon">
+            <ul>
+                <li><a href="blog_.html">SR</a></li>
+                <li><a href="blog.html">EN</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="pocetna.html"><img src="Slike/ALDO_logo_tamni.png" alt="Logo Aldo" id="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a href="proizvod.html">Proizvodi</a></li>
+                    <li><a href="o_meni.html">O Meni</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li class="active"><a href="blog_.html">Blog</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li class="lang-li-icon"><a href="blog_.html">SR</a> | <a href="blog.html">EN</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="korpa.html"><img src="Slike/cart.png" alt="Cart" id="cart"></a>
+            <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-------------  blog  -------------->
+
+    <header class="blog-header">
+        <div class="banner">
+            <div class="container-banner">
+                <div class="_appear_">
+                    <h1 class="banner-title">
+                        <span>Aldo.</span> Blog o Muškoj Modi i Životnom Stilu
+                    </h1>
+                </div>
+                <p>Sve Što Želite Da Znate o Modi i Načinu Života</p>
+                <form>
+                    <input type="text" class="search-input" placeholder="Unesite ključne reči za pretragu . . .">
+                    <button type="submit" class="search-btn" onclick="return false">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog-section">
+        <div class="blog-main-container">
+            <article class="blog-article">
+                <div class="blog-img-container"></div>
+
+                <div class="blog-info-container">
+                    <h2>Vertikalne pruge</h2>
+                    <p>Razlozi za prihvatanje trenda vertikalne pruge su dvojaki: prvo, izgleda sjajno i
+                        predstavlja jednostavan, prefinjen način eksperimentisanja sa šarama; drugo,
+                        ima lep dodatan bonus kada sklonite nekoliko kilograma svog izgleda, čineći
+                        da izgledate viši i vitkiji.</p>
+                    <button type="button" onclick="return false">Istražite ovo</button>
+                </div>
+            </article>
+
+            <article class="blog-article">
+                <div class="blog-img-container"></div>
+
+                <div class="blog-info-container">
+                    <h2>Sloj toplog vremena</h2>
+                    <p>Gomilanje slojeva kada sunce sija možda ne zvuči kao najpraktičniji potez, ali ipak
+                        može biti opcija ako se pametno uradi. Zamenite tešku gornju odeću za lagane jakne
+                        i košulje koje se nose preko običnih majica ili letnjih košulja.</p>
+                    <button type="button" onclick="return false">Istražite ovo</button>
+                </div>
+            </article>
+
+            <article class="blog-article">
+                <div class="blog-img-container"></div>
+
+                <div class="blog-info-container">
+                    <h2>Performanse velike jakne</h2>
+                    <p>Uspon tehničke gornje odeće u modnom svetu jedan je od sveobuhvatnih trendova u
+                        poslednjih nekoliko sezona i nastaviće se i do nove godine. Ove zime će velike
+                        otporne jakne vladati igrom velikih kaputa i sada je savršeno vreme da je odaberete.</p>
+                    <button type="button" onclick="return false">Istražite ovo</button>
+                </div>
+            </article>
+
+            <article class="blog-article">
+                <div class="blog-img-container"></div>
+
+                <div class="blog-info-container">
+                    <h2>Pinstripovi</h2>
+                    <p>Bilo da se radi o prevelikim odelima ili pantalonama širokih nogavica, pruge su bile
+                        svuda na izložbama muške odeće. To je dobrodošao povratak za jedan od najlepših
+                        obrazaca u krojenju. Ako je poslovni slučaj dobar, previše ležeran,
+                        odlučite se za fino prugasto odelo.</p>
+                    <button type="button" onclick="return false">Istražite ovo</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-------------  footer  -------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Preuzmite našu aplikaciju</h3>
+                    <p>Preuzmite aplikaciju za Android i iOS mobilni telefon.</p>
+                    <div class="app-logo">
+                        <img src="Slike/play-store.png" id="play_s">
+                        <img src="Slike/app-store.png" id="app_s">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Slike/ALDO_logo_svetli.png" id="logo">
+                    <p>Naša svrha je da održivo učinimo zadovoljstvo i blagodati
+                        mode dostupnim mnogima.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Korisni linkovi</h3>
+                    <ul>
+                        <li>Kuponi</li>
+                        <li>Blog Post</li>
+                        <li>Politika povratka</li>
+                        <li>Učlanjenje</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Pratite nas</h3>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>YouTube <i class="fa fa-youtube-play"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h4 class="copyright">&#169 2021. The Aldo. Sva prava zadržana.</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

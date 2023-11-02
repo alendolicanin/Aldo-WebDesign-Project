@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Slike/ALDO_logo.png">
+    <title>Contact - The Aldo</title>
+</head>
+
+<body>
+    <!--<div class="preloader" id="loading">
+        <div class="container-loader">
+            <div class="loader"><span></span></div>
+        </div>
+    </div>-->
+    <div class="container">
+        <div class="language lang-icon">
+            <ul>
+                <li><a href="kontakt.html">SR</a></li>
+                <li><a href="contact.html">EN</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Slike/ALDO_logo_tamni.png" alt="Logo Aldo" id="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li class="lang-li-icon"><a href="kontakt.html">SR</a> | <a href="contact.html">EN</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="Slike/cart.png" alt="Cart" id="cart"></a>
+            <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-------------  contact me  -------------->
+
+    <div class="contact-bg">
+        <div class="_appear_">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="line">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="contact-container_">
+        <div class="form-container_">
+
+            <div class="contact-info">
+
+                <h3 class="title-info">Let's get in touch</h3>
+                <p class="text-info">
+                    If you have any questions, simply use the following contact information.
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <i class="fa fa-map-marker"></i>
+                        <span>Mehmeda Alibasica Street, Novi Pazar, Serbia</span>
+                    </div>
+                    <div class="information">
+                        <i class="fa fa-envelope"></i>
+                        <span>alen.dolicanin672@gmail.com</span>
+                    </div>
+                    <div class="information">
+                        <i class="fa fa-mobile"></i>
+                        <span>062-199-XXXX</span>
+                    </div>
+                    <div class="information">
+                        <i class="fa fa-clock-o"></i>
+                        <span>Monday - Friday<br>(9:00 AM to 5:00 PM)</span>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Connect with us:</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-form_">
+
+                <form id="form" class="form">
+                    <div class="form-control">
+                        <label>Name and surname</label>
+                        <input onblur="checkName()" type="text" placeholder="alen.dolicanin" id="name_surname"
+                            title="Name and surname. Name and surname must be written in lower case, name must be separated by a period from the surname. (Maximum number of characters is 25.)" />
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label>E-mail</label>
+                        <input onblur="checkEmail()" placeholder="alendolicanin@gmail.com" id="email"
+                            title="E-mail. Email must have only lowercase and uppercase letters and numbers. At the beginning of the e-mail, it must not be a number, but a letter, and at the end it must be @ and standard for domains." />
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label>Message</label>
+                        <textarea onblur="checkMessage()" rows="5" placeholder="Write a message ..." id="message"
+                            title="Message. The message must have a minimum of 50 and a maximum of 250 characters. (A message can only have lowercase and uppercase letters, underscores, and numbers from 0 to 6.)"></textarea>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <button onclick="send()">SEND</button>
+                </form>
+
+            </div>
+
+            <div class="contact-map">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.140479687266!2d20.515996615442766!3d43.14357927914207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4756286c952d5405%3A0x47e9a64c19c5c5ac!2z0JzQtdGF0LzQtdC00LAg0JDQu9C40LHQsNGI0LjRm9CwLCDQndC-0LLQuCDQn9Cw0LfQsNGA!5e0!3m2!1ssr!2srs!4v1609200251110!5m2!1ssr!2srs"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-------------  footer  -------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="Slike/play-store.png" id="play_s">
+                        <img src="Slike/app-store.png" id="app_s">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Slike/ALDO_logo_svetli.png" id="logo">
+                    <p>Our Purpose is to Sustainably Make the Pleasure
+                        and Benefits of Fashion Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>YouTube <i class="fa fa-youtube-play"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h4 class="copyright">&#169 2021. The Aldo. All rights reserved.</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./app_validation.js"></script>
+
+</body>
+
+</html>

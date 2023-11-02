@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Slike/ALDO_logo.png">
+    <title>Profil - The Aldo</title>
+</head>
+
+<body>
+    <div class="preloader" id="loading">
+        <div class="container-loader">
+            <div class="loader"><span></span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="language lang-icon">
+            <ul>
+                <li><a href="profil.html">SR</a></li>
+                <li><a href="account.html">EN</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="pocetna.html"><img src="Slike/ALDO_logo_tamni.png" alt="Logo Aldo" id="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a href="proizvod.html">Proizvodi</a></li>
+                    <li><a href="o_meni.html">O Meni</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="blog_.html">Blog</a></li>
+                    <li class="active"><a href="profil.html">Profil</a></li>
+                    <li class="lang-li-icon"><a href="profil.html">SR</a> | <a href="account.html">EN</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="korpa.html"><img src="Slike/cart.png" alt="Cart" id="cart"></a>
+            <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-------  account page  -------->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 acc-page">
+                    <div class="_appear_">
+                        <img src="Slike/model3.jpg">
+                    </div>
+                </div>
+                <div class="col-2 acc-page">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Prijava</span>
+                            <span onclick="register()">Registracija</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Korisničko ime">
+                            <input type="password" placeholder="Lozinka">
+                            <button type="submit" class="btn" onclick="return false">Prijava</button>
+                            <a href="" onclick="return false">Zaboravili ste lozinku?</a>
+                        </form>
+                        <form id="RegForm">
+                            <input type="text" placeholder="Korisničko ime">
+                            <input type="email" placeholder="E-mail">
+                            <input type="password" placeholder="Lozinka">
+                            <button type="submit" class="btn" onclick="return false">Registruj se</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 acc-page">
+                    <h2 class="title">Najčešće Postavljena Pitanja</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Kako obaviti kupovinu na online prodavnici Aldo?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    Ukoliko prvi put koristite online prodavnicu brenda Aldo, naša preporuka je
+                                    da pogledate uputstvo u kome je detaljno opisan postupak poručivanja artikala na
+                                    linku ovde.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Izvršio/la sam porudžbinu u subotu, kada će mi biti isporučena
+                                pošiljka?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    Ukoliko je porudžbina izvršena tokom vikenda (subota ili nedelja) ili tokom
+                                    praznika,
+                                    isporuka će biti preuzeta od
+                                    strane kurira prvog sledećeg radnog dana, što znači da pošiljku možete očekivati u
+                                    utorak ukoliko je adresa za isporuku
+                                    na teritoriji Beograda ili većih gradova u Srbiji.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Kako da platim poručeni proizvod?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    Plaćanje poručenog artikla preko online prodavnice može se izvršiti na dva načina:
+                                    1.
+                                    Plaćanje pouzećem robe, isključivo
+                                    u gotovini 2. Platnim karticama.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Da li isporučujete robu van granica Srbije?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    U saradnji sa kurirskom službom isporučujemo proizvode u više od 210 zemalja sveta.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Kako mogu da prijavim problem, grešku u vezi sa online prodavnicom?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    Trudimo se da sajt Aldo brenda bude ažuriran i ispravan za korišćenje koliko je to u
+                                    našoj moći. Ukoliko se desi
+                                    da prilikom korišćenja sajta imate bilo kakvih problema, molimo Vas da nam se
+                                    obratite putem e-mail adrese
+                                    alen.dolicanin672@gmail.com, a mi ćemo se potruditi da grešku ispravimo u najkraćem
+                                    mogućem roku.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 acc-page">
+                    <div class="_scroll_">
+                        <img src="Slike/model1.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------  footer  -------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Preuzmite našu aplikaciju</h3>
+                    <p>Preuzmite aplikaciju za Android i iOS mobilni telefon.</p>
+                    <div class="app-logo">
+                        <img src="Slike/play-store.png" id="play_s">
+                        <img src="Slike/app-store.png" id="app_s">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Slike/ALDO_logo_svetli.png" id="logo">
+                    <p>Naša svrha je da održivo učinimo zadovoljstvo i blagodati
+                        mode dostupnim mnogima.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Korisni linkovi</h3>
+                    <ul>
+                        <li>Kuponi</li>
+                        <li>Blog Post</li>
+                        <li>Politika povratka</li>
+                        <li>Učlanjenje</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Pratite nas</h3>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>YouTube <i class="fa fa-youtube-play"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h4 class="copyright">&#169 2021. The Aldo. Sva prava zadržana.</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

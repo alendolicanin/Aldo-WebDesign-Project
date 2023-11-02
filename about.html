@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Slike/ALDO_logo.png">
+    <title>About Me - The Aldo</title>
+</head>
+
+<body>
+    <div class="preloader" id="loading">
+        <div class="container-loader">
+            <div class="loader"><span></span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="language lang-icon">
+            <ul>
+                <li><a href="o_meni.html">SR</a></li>
+                <li><a href="about.html">EN</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Slike/ALDO_logo_tamni.png" alt="Logo Aldo" id="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li class="lang-li-icon"><a href="o_meni.html">SR</a> | <a href="about.html">EN</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="Slike/cart.png" alt="Cart" id="cart"></a>
+            <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-------------  about me  -------------->
+
+    <div class="about-wrapper">
+        <div class="about-left">
+            <div class="about-left-content">
+                <div>
+                    <div class="about-img">
+                        <img src="Slike/AD.jpg" alt="about image">
+                    </div>
+
+                    <h2>Alen<br>Dolićanin</h2>
+                    <h3>Student DUNP</h3>
+                </div>
+
+                <ul class="icons">
+                    <a href="http://www.dunp.np.ac.rs/" target="_blank">
+                        <li><i class="fa fa-university"></i></li>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <li><i class="fa fa-facebook"></i></li>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <li><i class="fa fa-instagram"></i></li>
+                    </a>
+                    <a href="mailto:alen.dolicanin672@gmail.com">
+                        <li><i class="fa fa-envelope"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-right">
+            <div class="_appear_">
+                <h1>HI<span>!</span></h1>
+            </div>
+            <h2>Here's who I am & what I do</h2>
+            <div class="about-btns">
+                <a href="mailto:alen.dolicanin672@gmail.com">
+                    <button type="button" class="btns btn-blue">Contact Me</button>
+                </a>
+            </div>
+
+            <div class="about-para">
+                <p>I'm Alen Dolicanin.
+                    I was born on July 6, 2000. I attended the elementary school
+                    "Rifat Burdzovic - Trso". I went to high school in Novi Pazar.
+                    In 2019, I enrolled in the field of Software Engineering at the
+                    State University of Novi Pazar (DUNP).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-------------  footer  -------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="Slike/play-store.png" id="play_s">
+                        <img src="Slike/app-store.png" id="app_s">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Slike/ALDO_logo_svetli.png" id="logo">
+                    <p>Our Purpose is to Sustainably Make the Pleasure
+                        and Benefits of Fashion Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>YouTube <i class="fa fa-youtube-play"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h4 class="copyright">&#169 2021. The Aldo. All rights reserved.</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

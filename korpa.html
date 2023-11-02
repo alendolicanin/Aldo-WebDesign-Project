@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Slike/ALDO_logo.png">
+    <title>Moja Korpa - The Aldo</title>
+</head>
+
+<body>
+    <div class="preloader" id="loading">
+        <div class="container-loader">
+            <div class="loader"><span></span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="language lang-icon">
+            <ul>
+                <li><a href="korpa.html">SR</a></li>
+                <li><a href="cart.html">EN</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="pocetna.html"><img src="Slike/ALDO_logo_tamni.png" alt="Logo Aldo" id="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a href="proizvod.html">Proizvodi</a></li>
+                    <li><a href="o_meni.html">O Meni</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="blog_.html">Blog</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li class="lang-li-icon"><a href="korpa.html">SR</a> | <a href="cart.html">EN</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="korpa.html"><img src="Slike/cart.png" alt="Cart" id="cart"></a>
+            <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-------  cart item details  -------->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Proizvodi</th>
+                <th>Količina</th>
+                <th>Suma</th>
+            </tr>
+            <tr class="cart-hover">
+                <td>
+                    <div class="cart-info">
+                        <img src="Slike/10-1.jpg">
+                        <div>
+                            <p>Tamnoplava jakna</p>
+                            <small>Cena: €65.00</small><br>
+                            <a href="" onclick="return false">Ukloni</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>€65.00</td>
+            </tr>
+            <tr class="cart-hover">
+                <td>
+                    <div class="cart-info">
+                        <img src="Slike/17-1.jpg">
+                        <div>
+                            <p>Maslinastozelena jakna</p>
+                            <small>Cena: €74.00</small><br>
+                            <a href="" onclick="return false">Ukloni</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>€74.00</td>
+            </tr>
+            <tr class="cart-hover">
+                <td>
+                    <div class="cart-info">
+                        <img src="Slike/11-1.jpg">
+                        <div>
+                            <p>Crna kožna jakna</p>
+                            <small>Cena: €58.00</small><br>
+                            <a href="" onclick="return false">Ukloni</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>€58.00</td>
+            </tr>
+            <tr class="cart-hover">
+                <td>
+                    <div class="cart-info">
+                        <img src="Slike/4-1.jpg">
+                        <div>
+                            <p>Siva jakna</p>
+                            <small>Cena: €48.00</small><br>
+                            <a href="" onclick="return false">Ukloni</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>€48.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Suma</td>
+                    <td>€245.00</td>
+                </tr>
+                <tr>
+                    <td>Taksa</td>
+                    <td>€35.00</td>
+                </tr>
+                <tr>
+                    <td>Ukupno</td>
+                    <td>€280.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="total-price">
+            <a href="kupovina.html" class="btn btn-shadow-blue">Nastavite na kasu &#8594</a>
+        </div>
+    </div>
+
+    <!-------------  footer  -------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Preuzmite našu aplikaciju</h3>
+                    <p>Preuzmite aplikaciju za Android i iOS mobilni telefon.</p>
+                    <div class="app-logo">
+                        <img src="Slike/play-store.png" id="play_s">
+                        <img src="Slike/app-store.png" id="app_s">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Slike/ALDO_logo_svetli.png" id="logo">
+                    <p>Naša svrha je da održivo učinimo zadovoljstvo i blagodati
+                        mode dostupnim mnogima.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Korisni linkovi</h3>
+                    <ul>
+                        <li>Kuponi</li>
+                        <li>Blog Post</li>
+                        <li>Politika povratka</li>
+                        <li>Učlanjenje</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Pratite nas</h3>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>YouTube <i class="fa fa-youtube-play"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h4 class="copyright">&#169 2021. The Aldo. Sva prava zadržana.</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

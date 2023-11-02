@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Slike/ALDO_logo.png">
+    <title>Blog - The Aldo</title>
+</head>
+
+<body>
+    <div class="preloader" id="loading">
+        <div class="container-loader">
+            <div class="loader"><span></span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="language lang-icon">
+            <ul>
+                <li><a href="blog_.html">SR</a></li>
+                <li><a href="blog.html">EN</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Slike/ALDO_logo_tamni.png" alt="Logo Aldo" id="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="blog.html">Blog</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li class="lang-li-icon"><a href="blog_.html">SR</a> | <a href="blog.html">EN</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="Slike/cart.png" alt="Cart" id="cart"></a>
+            <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-------------  blog  -------------->
+
+    <header class="blog-header">
+        <div class="banner">
+            <div class="container-banner">
+                <div class="_appear_">
+                    <h1 class="banner-title">
+                        <span>Aldo.</span> Men's Fashion & Lifestyle Blog
+                    </h1>
+                </div>
+                <p>Everything That You Want To Know About Fashion & Lifestyle</p>
+                <form>
+                    <input type="text" class="search-input" placeholder="Input your search keywords . . .">
+                    <button type="submit" class="search-btn" onclick="return false">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog-section">
+        <div class="blog-main-container">
+            <article class="blog-article">
+                <div class="blog-img-container"></div>
+
+                <div class="blog-info-container">
+                    <h2>Vertical Stripes</h2>
+                    <p>The reasons for embracing the vertical stripe trend are twofold: firstly, it looks
+                        great and presents a simple, refined way to experiment with prints; secondly,
+                        it has the nice added bonus of shaving a few pounds off your appearance, making
+                        you appear taller and slimmer.</p>
+                    <button type="button" onclick="return false">Explore This</button>
+                </div>
+            </article>
+
+            <article class="blog-article">
+                <div class="blog-img-container"></div>
+
+                <div class="blog-info-container">
+                    <h2>Warm-Weather Layering</h2>
+                    <p>Piling on layers when the sun is shining may not sound like the most practical move
+                        to make but it can still be an option if done cleverly. Swap out the heavy outerwear
+                        for lightweight jackets and overshirts worn over plain tees or summer shirts.</p>
+                    <button type="button" onclick="return false">Explore This</button>
+                </div>
+            </article>
+
+            <article class="blog-article">
+                <div class="blog-img-container"></div>
+
+                <div class="blog-info-container">
+                    <h2>Performance Parkas</h2>
+                    <p>The rise of technical outerwear in the fashion world has been one of the overarching
+                        trends of the last few seasons and will continue well into the new year. This winter,
+                        tricked-out parkas will be ruling the big-coat game and now’s the perfect time to pick one up.
+                    </p>
+                    <button type="button" onclick="return false">Explore This</button>
+                </div>
+            </article>
+
+            <article class="blog-article">
+                <div class="blog-img-container"></div>
+
+                <div class="blog-info-container">
+                    <h2>Pinstripes</h2>
+                    <p>Whether it was oversized suiting or wide-leg trousers, pinstripes were everywhere at
+                        the menswear shows. It’s a welcome return for one of the coolest patterns in
+                        tailoring. If business casual is well, too casual, opt for a fine quality
+                        pinstriped suit.</p>
+                    <button type="button" onclick="return false">Explore This</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-------------  footer  -------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="Slike/play-store.png" id="play_s">
+                        <img src="Slike/app-store.png" id="app_s">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Slike/ALDO_logo_svetli.png" id="logo">
+                    <p>Our Purpose is to Sustainably Make the Pleasure
+                        and Benefits of Fashion Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>YouTube <i class="fa fa-youtube-play"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h4 class="copyright">&#169 2021. The Aldo. All rights reserved.</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
